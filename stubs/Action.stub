@@ -1,5 +1,0 @@
-export const FileName = function () {
-   return{
-       type:null
-   }
-};

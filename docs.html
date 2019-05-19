@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>reactoose</title>
+      <meta name="description" content="">
+      <meta name="keywords" content="">
+      <link href="https://unpkg.com/tailwindcss@next/dist/tailwind.min.css" rel="stylesheet">
+      <!--Replace with your tailwind.css once created-->
+      <style>
+         @import url('https://fonts.googleapis.com/css?family=Lato');
+         html { font-family: 'Lato', sans-serif; }
+      </style>
+   </head>
+   <body class="bg-gray-100 tracking-wider tracking-normal">
+     
+<nav id="header" class="w-full z-10">
+	
+	<div id="progress" class="h-1 z-20 top-0" style="background:linear-gradient(to right, #4dc0b5 var(--scroll), transparent 0);"></div>
+
+		<div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-Active0 py-3">
+				
+			<div  class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-gray-100 md:bg-transparent z-20" id="nav-content">
+                <ul class="list-reset lg:flex justify-center flex-1 items-center">
+                    <li class="mr-3">
+                        <a target="_blank" class="inline-block py-2 px-4 text-gray-900 font-bold no-underline" href="index.html">Home</a>
+                    </li>
+                    <li class="mr-3">
+                        <a target="_blank" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4" href="docs.html">Documentation</a>
+                    </li>
+                    <li class="mr-3">
+                        <a target="_blank" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4" href="https://github.com/getspooky/reactoose/issues">Issues</a>
+                    </li>
+                    <li class="mr-3">
+                        <a target="_blank" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4" href="https://github.com/getspooky/reactoose">GitHub</a>
+                    </li>
+                    <li class="mr-3">
+                        <a target="_blank" class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4" href="https://github.com/getspooky/reactoose/releases">Releases</a>
+                    </li>
+                </ul>
+			</div>
+		</div>
+	</nav>
+      <!--Container-->
+      <div class="container w-full flex flex-wrap mx-auto px-2 pt-8 lg:pt-16">
+         <div class="w-full lg:w-1/5 lg:px-6 text-xl text-gray-800 leading-normal">
+            <p class="text-base font-bold py-2 lg:pb-6 text-gray-700">Menu</p>
+            <div class="block lg:hidden sticky inset-0">
+               <button id="menu-toggle" class="flex w-full justify-end px-3 py-3 bg-white lg:bg-transparent border rounded border-gray-600 hover:border-purple-500 appearance-none focus:outline-none">
+                  <svg class="fill-current h-3 float-right" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                  </svg>
+               </button>
+            </div>
+            <div class="w-full sticky inset-0 hidden h-64 lg:h-auto overflow-x-hidden overflow-y-auto lg:overflow-y-hidden lg:block mt-0 border border-gray-400 lg:border-transparent bg-white shadow lg:shadow-none lg:bg-transparent z-20" style="top:5em;" id="menu-content">
+               <ul class="list-reset">
+                  <li class="py-2 md:my-0 hover:bg-purple-100 lg:hover:bg-transparent">
+                     <a href="#introduction" class="block pl-4 align-middle text-gray-700 no-underline hover:text-purple-500 border-l-4 border-transparent lg:border-purple-500 lg:hover:border-purple-500">
+                     <span class="pb-1 md:pb-0 text-sm text-gray-900">Introduction</span>
+                     </a>
+                  </li>
+                  <li class="py-2 md:my-0 hover:bg-purple-100 lg:hover:bg-transparent">
+                     <a href="#typescript" class="block pl-4 align-middle text-gray-700 no-underline hover:text-purple-500 border-l-4 border-transparent lg:hover:border-gray-400">
+                     <span class="pb-1 md:pb-0 text-sm">Why Typescript</span>
+                     </a>
+                  </li>
+                  <li class="py-2 md:my-0 hover:bg-purple-100 lg:hover:bg-transparent">
+                     <a href="#installation" class="block pl-4 align-middle text-gray-700 no-underline hover:text-purple-500 border-l-4 border-transparent lg:hover:border-gray-400">
+                     <span class="pb-1 md:pb-0 text-sm">Installation</span>
+                     </a>
+                  </li>
+                  <li class="py-2 md:my-0 hover:bg-purple-100 lg:hover:bg-transparent">
+                     <a href="#file" class="block pl-4 align-middle text-gray-700 no-underline hover:text-purple-500 border-l-4 border-transparent lg:hover:border-gray-400">
+                     <span class="pb-1 md:pb-0 text-sm">File Structure</span>
+                     </a>
+                  </li>
+                  <li class="py-2 md:my-0 hover:bg-purple-100 lg:hover:bg-transparent">
+                     <a href="#reactoose" class="block pl-4 align-middle text-gray-700 no-underline hover:text-purple-500 border-l-4 border-transparent lg:hover:border-gray-400">
+                     <span class="pb-1 md:pb-0 text-sm">reactoose-CLI</span>
+                     </a>
+                  </li>
+                  <li class="py-2 md:my-0 hover:bg-purple-100 lg:hover:bg-transparent">
+                        <a href="#writing" class="block pl-4 align-middle text-gray-700 no-underline hover:text-purple-500 border-l-4 border-transparent lg:hover:border-gray-400">
+                        <span class="pb-1 md:pb-0 text-sm">Writing Commands</span>
+                        </a>
+                     </li>
+               </ul>
+            </div>
+         </div>
+         <div class="w-full lg:w-4/5 p-8 mt-6 lg:mt-0 text-gray-900 leading-normal bg-white border border-gray-400 border-rounded">
+            <!--Title-->
+            <div class="font-sans">
+               <h1 id="introduction" class="font-sans break-normal font-bold text-gray-900 pt-6 pb-2 text-xl">Introduction</h1>
+               <hr class="border-b border-gray-400">
+            </div>
+            <!--Post Content-->
+            <!--Lead Para-->
+            <p class="text-md md:text-lg text-grey-dark leading-normal">
+					A project template for building front-end applications with React , Redux , tailwindcss and Typescript 
+					</p>
+            <p class="py-6">
+               So you’re starting a React project. You know what you want to build, and quickly spin up a project with create-react-app. And then you’re confronted with the problem of where.
+Where do your components go? Where should you put business logic? Where do higher order components fit in? And even if your structure feels right now, how do you know that it won’t feel wrong later?
+If you’ve used other frameworks, you know that it doesn’t have to be this way. Rails gives you structure. So does Angular. What if React also had a system that told you exactly where files go? You could focus on building stuff instead of dicking around with folder structures.
+            </p>
+              <!--Title-->
+              <div class="font-sans">
+               <h1 id="typescript" class="font-sans break-normal text-gray-900 font-bold pt-6 pb-2 text-xl">Why did reactoose choose to use TypeScript ?</h1>
+               <hr class="border-b border-gray-400">
+             </div>
+             <p class="py-6">
+               TypeScript is a free, open-source programming language developed and maintained by Microsoft. It is a strict superset of JavaScript and adds optional static typing and class-based object-oriented programming to the language.
+               TypeScript can be helpful to React developers in a lot of ways.
+               For example:
+               <ol>
+                  <li>
+                    - Interfaces: TypeScript allows you to define complex type definitions in the form of interfaces. This is helpful when you have a complex type that you want to use in your application, such as an object which contains other properties. This results in strict checks which in turn reduces the amount of possible bugs you might have produced without it.
+                  </li>
+                  <li>
+                    - TypeScript is very helpful while using IDEs like Visual Studio, Visual Studio Code, Atom, Webstorm, Eclipse and so much more as they provide better autocomplete and snippet generation, which makes development faster.
+                  </li>
+                  <li>
+                    - TypeScript makes code easier to read and understand: The key to TypeScript is that it’s a statically typed script. Programming languages can either be statically or dynamically typed; the difference is when type checking occurs. Static languages’ variables are type checked which helps make the code more readable.
+                  </li>
+               </ol>
+            </p>
+              <!--Title-->
+              <div class="font-sans">
+               <h1 id="installation" class="font-sans break-normal text-gray-900 font-bold pt-6 pb-2 text-xl">Installation</h1>
+               <hr class="border-b border-gray-400">
+             </div>
+            <p class="py-6">In order to get started developing, you'll need to do a few things first.
+               Install all of the node_modules required for the package. Depending on your computer's configuration, you may need to prefix this command with a sudo.
+            </p>
+            <pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4">npm install or yarn</pre><br>
+            <p class="py-6">Lastly, run the start command to get the project off the ground. This command will build your JS files using the Webpack dev-server</p>
+            <pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4">npm run start or yarn start</pre><br>
+           <!--Title-->
+           <div class="font-sans">
+               <h1 id="file" class="font-sans break-normal text-gray-900 font-bold pt-6 pb-2 text-xl">File Structure                  </h1>
+               <hr class="border-b border-gray-400">
+           </div>
+      
+           <p class="py-2">
+               <b>build/</b>
+               This is where your application will be compiled. Assets, like images and fonts, should be placed directly within this folder. Also in this folder is a default index.html file for serving up the application.
+           </p>
+
+           <p class="py-2">
+               <b>src/</b>
+               The client folder houses the client application for your project.
+           </p>
+
+           <p class="py-2">
+               <b>test/</b>
+               Your unit and integration tests for components, reducers and services. by default reactoose use jest
+           </p>
+
+            <!--Title-->
+            <div class="font-sans">
+                  <h1 id="reactoose" class="font-sans break-normal text-gray-900 font-bold pt-6 pb-2 text-xl">reactoose-CLI                 </h1>
+                  <hr class="border-b border-gray-400">
+              </div>
+
+              <p class="py-6">
+                  reactoose-CLI is the command-line interface included with reactoose. It provides a number of helpful commands that can assist you while you build your application.
+                  To view a list of all available reactoose commands, you may use the create --help command:
+               </p>
+
+            <pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4">yasser@yasser-ThinkPad:~/Documents/reactoose yarn reactoose <br>yarn run v1.12.3 <br> $ tsc reactoose-cli.ts && node reactoose-cli.js<br>reactoose$ create --help
+                  
+Usage: create [options]
+                  
+(reactoose 1.0.0 — cli) by Yasser Ameur
+                  
+Options:
+                  
+ --help               output usage information
+--action [value]     
+--reducer [value]   
+--component [value]  
+--cfunction [value]  
+                  </pre><br>
+
+<p class="py-4">Example : Create a new Component</p>                  
+<pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4">create --component Home</pre><br>
+<p class="py-0">output : src/component/pages/Home.tsx</p>                  
+
+<div class="font-sans">
+      <h1 id="writing" class="font-sans break-normal text-gray-900 font-bold pt-6 pb-2 text-xl">Writing Commands </h1>
+      <hr class="border-b border-gray-400">
+  </div>
+
+  <p class="py-6">
+      In addition to the commands provided with reactoose, you may also build your own custom commands. Commands are typically stored in the src/console/commands directory; however, you are free to choose your own storage location.
+      by default reactoose use Vorpal is a framework that makes it easy to build mature, immersive command-line applications in JavaScript.
+   </p>
+
+  <p class="py-4">Let's start with a simple example - when we say "duck" then Daffy will respond with "Wabbit."
+  </p> 
+
+ <pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4">
+   <code class="break-words whitespace-pre-wrap">
+var vorpal = require('vorpal')();
+
+vorpal.command('duck', 'Outputs "rabbit"').action(function(args, callback) {
+   this.log('Wabbit');
+   callback();
+});</code>
+ </pre>
+             
+       <!--/ Post Content-->
+         </div>
+         <!--Back link -->
+         <div class="w-full lg:w-4/5 lg:ml-auto text-base md:text-sm text-gray-500 px-4 py-6">
+            <span class="text-base text-purple-500 font-bold">&lt;<span> <a href="index.html" class="text-base md:text-sm text-purple-500 font-bold no-underline hover:underline">Back to Help</a></p>
+         </div>
+      </div>
+      <!--/container-->
+      <footer class="bg-white border-t border-gray-400 shadow">	
+         <p class="py-4 text-center text-gray-600 text-sm">
+            Released under the MIT License Copyright © Yasser Ameur El Idrissi 
+         </p>
+      </footer>
+      <script>
+         /*Toggle dropdown list*/
+         /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
+         
+         var navMenuDiv = document.getElementById("nav-content");
+         var navMenu = document.getElementById("nav-toggle");
+         
+         var helpMenuDiv = document.getElementById("menu-content");
+         var helpMenu = document.getElementById("menu-toggle");
+         
+         document.onclick = check;
+         
+         function check(e){
+           var target = (e && e.target) || (event && event.srcElement);
+         
+          
+           //Nav Menu
+           if (!checkParent(target, navMenuDiv)) {
+         	// click NOT on the menu
+         	if (checkParent(target, navMenu)) {
+         	  // click on the link
+         	  if (navMenuDiv.classList.contains("hidden")) {
+         		navMenuDiv.classList.remove("hidden");
+         	  } else {navMenuDiv.classList.add("hidden");}
+         	} else {
+         	  // click both outside link and outside menu, hide menu
+         	  navMenuDiv.classList.add("hidden");
+         	}
+           }
+           
+           //Help Menu
+           if (!checkParent(target, helpMenuDiv)) {
+         	// click NOT on the menu
+         	if (checkParent(target, helpMenu)) {
+         	  // click on the link
+         	  if (helpMenuDiv.classList.contains("hidden")) {
+         		helpMenuDiv.classList.remove("hidden");
+         	  } else {helpMenuDiv.classList.add("hidden");}
+         	} else {
+         	  // click both outside link and outside menu, hide menu
+         	  helpMenuDiv.classList.add("hidden");
+         	}
+           }
+           
+         }
+         
+         function checkParent(t, elm) {
+           while(t.parentNode) {
+         	if( t == elm ) {return true;}
+         	t = t.parentNode;
+           }
+           return false;
+         }
+         
+      
+         
+      </script>
+   </body>
+</html>
