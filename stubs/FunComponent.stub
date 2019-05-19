@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-const FileName = function (props:object) {
+export defaultfunction (props:object) {
 
     return(
         <React.Fragment>
@@ -9,5 +9,3 @@ const FileName = function (props:object) {
     )
 
 };
-
-export default FileName;
