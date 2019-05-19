@@ -7,7 +7,9 @@ const config = {
     entry: './src/index.tsx',
     output: {
         filename: 'bundle.js',
-        path: path.resolve('./dist')
+        path: path.resolve('./dist'),
+        publicPath: '/'
+
     },
 
     resolve: {
@@ -15,6 +17,10 @@ const config = {
         extensions: [".ts", ".tsx", ".js",".jsx","css","scss"]
     },
 
+    devServer: {
+        historyApiFallback: true,
+    },
+    
     module: {
         rules: [
             {
