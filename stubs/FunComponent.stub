@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-export defaultfunction (props:object) {
+export default function (props:object) {
 
     return(
         <React.Fragment>
