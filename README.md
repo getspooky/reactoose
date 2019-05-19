@@ -56,3 +56,8 @@ Anybody can help by doing any of the following: Ask your employer to use reactoo
 ## License
 
 The reactoose is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/getspooky/reactoose/badge.svg?style=beer-square)](https://beerpay.io/getspooky/reactoose)  [![Beerpay](https://beerpay.io/getspooky/reactoose/make-wish.svg?style=flat-square)](https://beerpay.io/getspooky/reactoose?focus=wish)
