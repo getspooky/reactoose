@@ -22,7 +22,7 @@ Teams don’t have to argue on project structure, instead they can focus on buil
 
 ## Documentation
 
-For installation instructions, in-depth usage and deployment details, please take a look at the official [documentation](https://getspooky.github.io/laravelDash/#/).
+For installation instructions, in-depth usage and deployment details, please take a look at the official [documentation](https://getspooky.github.io/reactoose/).
 
 ## Requirements
 reactoose has a few requirements you should be aware of before installing:
